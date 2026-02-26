@@ -244,3 +244,4 @@ AS
 		,[DateModified]
 	   FROM Retail.dbo.hd_orders 
 END
+EXEC bronze.load_hd_orders
