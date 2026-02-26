@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS silver.dim_hd_orders
 CREATE TABLE silver.dim_hd_orders(
- 	OrderId bigint NOT NULL,
+ 	OrderId bigint primary key NOT NULL,
 	OrderDate datetime NOT NULL,
 	CustomerNo int NOT NULL,
 	CustomerName nvarchar(150) NOT NULL,
