@@ -1,0 +1,4 @@
+USE db_Atef
+GO
+CREATE SCHEMA silver
+GO
