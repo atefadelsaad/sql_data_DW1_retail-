@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS gold.fact_hd_orders
 CREATE TABLE gold.fact_hd_orders(
- 	OrderId bigint NOT NULL,
+ 	OrderId bigint primary key NOT NULL,
 	OrderDate datetime NOT NULL,
 	CustomerNo int NOT NULL,
 	CustomerName nvarchar(150) NOT NULL,
