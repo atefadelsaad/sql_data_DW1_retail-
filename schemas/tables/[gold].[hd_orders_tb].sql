@@ -11,4 +11,5 @@ CREATE TABLE gold.fact_hd_orders(
 	CustomerNotes nvarchar(1000) NOT NULL ,
 	OrderBranch INT NOT NULL,
 	TotalValue decimal(16, 3) NOT NULL,
+	last_date datetime NOT NULL
 )
