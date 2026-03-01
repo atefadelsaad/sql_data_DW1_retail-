@@ -5,7 +5,7 @@ CREATE TABLE gold.HDCancelledOrders(
 	OrderDate DATETIME NOT NULL ,
 	CustomerNo INT NOT NULL,
 	CustomerName NVARCHAR(150) NOT NULL,
-	StatusName NVARCHAR(100) NOT NULL,
+	orderStatus NVARCHAR(100) NOT NULL,
 	CancelReasonName NVARCHAR(150) NOT NULL,
 	CustomerNotes NVARCHAR(1000) NOT NULL ,
 	OrderBranch INT NOT NULL,
