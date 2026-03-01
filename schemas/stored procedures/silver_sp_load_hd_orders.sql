@@ -7,6 +7,7 @@ BEGIN
 		CustomerNo,
 		CustomerName,
 		StatusName,
+		StatusCode,
 		TakerName,
 		Notes,
 		CancelReasonName,
@@ -24,6 +25,7 @@ BEGIN
 		ELSE TRIM(CustomerName)
 		END CustomerName,
 		StatusName,
+		StatusCode,
 		TakerName,
 		CASE 
 		     WHEN Notes IS NULL OR Notes = ''
@@ -44,4 +46,3 @@ BEGIN
 		TotalValue
 	FROM bronze.erp_hd_orders
 END
-
