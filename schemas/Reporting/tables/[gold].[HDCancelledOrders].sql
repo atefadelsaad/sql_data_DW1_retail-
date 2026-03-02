@@ -1,0 +1,20 @@
+
+DROP TABLE IF EXISTS gold.HDCancelledOrders
+CREATE TABLE gold.HDCancelledOrders(
+	OrderId BIGINT PRIMARY KEY NOT NULL ,
+	OrderDate DATETIME NOT NULL ,
+	CustomerNo INT NOT NULL,
+	CustomerName NVARCHAR(150) NOT NULL,
+	orderStatus NVARCHAR(100) NOT NULL,
+	CancelReasonName NVARCHAR(150) NOT NULL,
+	CustomerNotes NVARCHAR(1000) NOT NULL ,
+	OrderBranch INT NOT NULL,
+	arabic_name CHAR(50) NOT NULL,
+	TotalValue DECIMAL(16,3) NOT NULL,
+	Barcode NVARCHAR(20) NOT NULL ,
+	itemName NVARCHAR(20) NOT NULL,
+	Qty DECIMAL(12,3) NOT NULL, 
+	price DECIMAL(20,3)NOT NULL,
+	ItemNotes  NVARCHAR(1000) NOT NULL,
+	last_update DATETIME NOT NULL
+)
