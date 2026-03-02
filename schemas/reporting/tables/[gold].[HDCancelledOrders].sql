@@ -1,5 +1,5 @@
-
-CREATE TABLE [gold].[HDCancelledOrders](
+DROP TABLE IF EXISTS gold.fact_HDCancelledOrders
+CREATE TABLE [gold].[fact_HDCancelledOrders](
 	[OrderId] [bigint] NOT NULL,
 	[OrderDate] [datetime] NOT NULL,
 	[CustomerNo] [int] NOT NULL,
