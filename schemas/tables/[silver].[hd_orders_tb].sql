@@ -5,6 +5,7 @@ CREATE TABLE silver.dim_hd_orders(
 	CustomerNo int NOT NULL,
 	CustomerName nvarchar(150) NOT NULL,
 	StatusName nvarchar(100) NOT NULL,
+	StatusCode smallint not null,
 	TakerName nvarchar(150) NOT NULL,
 	Notes nvarchar(1000) NOT NULL,
 	CancelReasonName nvarchar(150) NOT NULL,
