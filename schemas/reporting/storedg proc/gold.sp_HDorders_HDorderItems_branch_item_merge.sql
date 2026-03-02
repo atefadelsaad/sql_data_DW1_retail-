@@ -1,4 +1,4 @@
-CREATE OR ALTER PROCEDURE gold.HDorders_HDorderItems_branch_item_merge
+  CREATE OR ALTER PROCEDURE gold.HDorders_HDorderItems_branch_item_merge
 AS
 	declare @to smalldatetime = (select CAST(GETDATE() AS DATE));
 	declare @from smalldatetime = DATEADD(DAY,-1,@to);
@@ -35,7 +35,7 @@ WITH data_sources AS(
 			StatusCode = 200
 			)
 
-   MERGE gold.HDCancelledOrders AS target
+   MERGE gold.fact_HDCancelledOrders AS target
    USING data_sources AS source
          ON target.OrderId = source.OrderId
    WHEN MATCHED AND	(		
@@ -84,6 +84,3 @@ WITH data_sources AS(
 
 END
 
-
-
-EXEC gold.HDorders_HDorderItems_branch_item_merge
