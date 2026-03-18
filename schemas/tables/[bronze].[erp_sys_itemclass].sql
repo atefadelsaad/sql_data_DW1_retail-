@@ -1,0 +1,33 @@
+
+CREATE TABLE [bronze].[erp_sys_itemclass](
+	[itemclass] [smallint] NOT NULL,
+	[a_name] [varchar](50) NULL,
+	[l_name] [varchar](50) NULL,
+	[usage] [smallint] NULL,
+	[transdate] [smalldatetime] NULL,
+	[transtype] [smallint] NULL,
+	[Createdby] [int] NULL,
+	[Createddate] [datetime] NULL,
+	[Isdraft] [smallint] NULL,
+	[Modified_date] [date] NULL,
+	[Isloaded] [smallint] NULL,
+	[Loadedby] [int] NULL,
+	[Loadeddate] [datetime] NULL,
+	[Reserved1] [varchar](500) NULL,
+	[Reserved2] [varchar](500) NULL,
+	[Reserved3] [varchar](500) NULL,
+	[Reserved4] [numeric](18, 3) NULL,
+	[Reserved5] [numeric](18, 3) NULL,
+	[Reserved6] [datetime] NULL,
+	[Reserved7] [datetime] NULL,
+	[Reserved8] [int] NULL,
+	[Reserved9] [int] NULL,
+	[Reserved10] [int] NULL,
+	[Reserved11] [datetime] NULL,
+	[Reserved12] [datetime] NULL,
+	[Reserved13] [int] NULL,
+	[Reserved14] [int] NULL,
+	[Reserved15] [int] NULL,
+ CONSTRAINT [pk_sys_itemclass1] PRIMARY KEY NONCLUSTERED 
+(
+	[itemclass] ASC))
