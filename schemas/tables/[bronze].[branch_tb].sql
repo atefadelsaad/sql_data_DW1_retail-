@@ -1,5 +1,6 @@
     DROP TABLE IF EXISTS bronze.erp_sys_branch;
 CREATE TABLE bronze.erp_sys_branch (
+    
     company smallint NOT NULL,
     sector smallint NOT NULL,
     region smallint NOT NULL,
